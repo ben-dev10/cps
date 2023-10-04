@@ -1,0 +1,35 @@
+/* accordion styles */
+
+.accordion .label {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+
+    border: 2px solid red;
+}
+
+.accordion .content {
+    /* padding: 15px; */
+    height: 0px;
+    overflow: hidden;
+    transition: all 250ms;
+
+    background-color: gainsboro;
+}
+
+.accordion .content>div {
+    padding: 15px;
+}
+
+.accordion .accordion-item.active .content {
+    height: 50px;
+}
+
+.accordion .accordion-item.active .label img {
+    transform: rotateX(180deg);
+}
+
+#b-none {
+    border-top: none
+}

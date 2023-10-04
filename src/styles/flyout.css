@@ -1,0 +1,10 @@
+/* flyout-menu styles on pc */
+
+.flyout:hover .flyout-content {
+    display: block;
+}
+
+.flyout-header::after {
+    content: url("../../public/arrow.svg");
+
+}

@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO -->
   <meta name="description" content="Creative Productive Software (CPS) is a powerful suite of document editors 
     including popular formats such as .docx, .pdf, .pptx .etc and a host of other functions &amp; formats." />
   <meta name="keywords" content="CPS, Creative Productive Software, PDF Editor, Spreadsheet Editor" />
   <title>CPS - a powerful, modern document editor </title>
+  <link rel="stylesheet" href="src/styles/accordion.css">
+  <link rel="stylesheet" href="src/styles/flyout.css">
 
 
   <!-- FIX: Remove before publishing -->
@@ -25,11 +26,84 @@
 
 </head>
 
-<body>
+<body class="bg-[#f4f5ff]">
 
-  <header class="b1 p-3 sticky top-0 bg-slate-700">
-    <nav class="mobile">Nav</nav>
-    <nav class="pc"></nav>
+  <header class="b1 p-3 sticky top-0 bg-white">
+    <nav class="mobile">
+      <div class="top-navbar flex">
+        <img src="menu-icon.svg" alt="menu-icon" onclick="openMenu()">
+        <span class="m-auto"> CPS </span>
+        <img src="avatar.svg" alt="avatar logo">
+      </div>
+      <div id="sidebar"
+        class="sidebar w-[0] fixed z-10 top-0 left-0 transition-all duration-[0.4s] overflow-hidden h-[100vh] bg-green-500 ">
+        <div>
+          <div class="close-btn"><img src="close.svg" alt="close icon" width="24px" onclick="closeMenu()"></div>
+          <h4>Menu</h4>
+          <div class="mobile accordion-container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="label">
+                  <div class="text" style="flex-grow: 1;">Product</div>
+                  <img src="./assets/arrow.svg" alt="" class="icon">
+                </div>
+                <div class="content">
+                  <div>
+                    Free Download
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="label b-none" id="b-none">
+                  <div class="text" style="flex-grow: 1;">Company</div>
+                  <img src="./assets/arrow.svg" alt="" class="icon">
+                </div>
+                <div class="content">
+                  <div>
+                    Services
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="pc hidden">
+      <div class="flex gap-5 w-[max] b2">
+        <p> CPS </p>
+        <p> Services </p>
+
+        <div class="flyout b2">
+          <p class="flyout-header"> Product </p>
+          <ul
+            class="flyout-content absolute hidden p-5 bg-amber-500 w-screen h-[150px] shadow-xl left-[-1%] top-[70%] z-10">
+            <li class="hover:bg-slate-300">Download</li>
+            <li class="hover:bg-slate-300">Learn</li>
+            <li class="hover:bg-slate-300">Academy</li>
+          </ul>
+        </div>
+
+        <p> Academy </p>
+
+        <div class="flyout b2 relative">
+          <p class="flyout-header"> Purchase </p>
+          <ul
+            class="flyout-content absolute hidden p-5 bg-yellow-500 w-[150px] h-[150px] shadow-xl rounded-[8px] left-[-10%]">
+            <li>Download</li>
+            <li>Learn</li>
+            <li>Academy</li>
+          </ul>
+        </div>
+
+        <p class="flex mr-auto"> Services</p>
+        <button class="sign-in"> Download </button>
+      </div>
+    </nav>
   </header>
 
   <main class="">
@@ -48,8 +122,7 @@
 
 
   <!-- react root container -->
-  <div id="root" class="border border-yellow-500 fixed p-2 right-8 top-12 bg-gray-600"></div>
-
+  <div id="root" class="border border-yellow-500 fixed p-2 right-8 top-[25%] bg-gray-600"></div>
   <!-- scripts -->
   <script type="module" src="/src/main.jsx"></script>
   <script src="./src/scripts/index.js"></script>
