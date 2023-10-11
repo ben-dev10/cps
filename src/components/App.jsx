@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Accordion01 from "./accordion";
 import { createPortal } from "react-dom";
+import AccordionParent from "./accordion/accordion-parent";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       >
         Hello CPS
       </motion.p>
-      {createPortal(<Accordion01 />, document.getElementById("accordion"))}
+      {createPortal(<AccordionParent />, document.getElementById("accordion"))}
+      {/* {createPortal(<Accordion01 />, document.querySelector(".m-accordion"))} */}
     </>
   );
 }
