@@ -5,7 +5,7 @@
 
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
   font-synthesis: none;
@@ -13,6 +13,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.hero {
+  background-image: url('./assets/hero-bg-mobile.png');
+  background-size: cover;
+}
+
+/* nav-bar */
+#header {
+  transition: background-color 400ms ease;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+  color: #000;
 }
 
 /* pc breakpoint: applies at 700px -> infinity */
@@ -45,4 +60,9 @@
 
     color: red;
   }
+}
+
+/* main -> section */
+main>section {
+  padding: 10px;
 }

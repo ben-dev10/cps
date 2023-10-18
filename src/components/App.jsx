@@ -1,19 +1,16 @@
-import { motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import AccordionParent from "./accordion/accordion-parent";
+import SelectButton from "./select-button";
 
 function App() {
   return (
     <>
-      <motion.p
-        className="text-indigo-400 font-bold"
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        Hello CPS
-      </motion.p>
       {createPortal(<AccordionParent />, document.getElementById("accordion"))}
-      {/* {createPortal(<Accordion01 />, document.querySelector(".m-accordion"))} */}
+      {createPortal(<SelectButton />, document.getElementById("select-button"))}
+      {createPortal(
+        <AccordionParent />,
+        document.getElementById("footer-accordion")
+      )}
     </>
   );
 }

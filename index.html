@@ -12,23 +12,12 @@
   <link rel="stylesheet" href="src/styles/accordion.css">
   <link rel="stylesheet" href="src/styles/flyout.css">
 
-
-  <!-- FIX: Remove before publishing -->
-  <style>
-    .b1 {
-      border: 2px solid red;
-    }
-
-    .b2 {
-      border: 2px solid grey;
-    }
-  </style>
-
+  <script src="./src/scripts/navbar-scroll-event.js" defer></script>
 </head>
 
 <body class="bg-[#f4f5ff]">
 
-  <header class="b1 p-3 sticky top-0 bg-white">
+  <header class=" p-3 sticky top-0" id="header">
     <nav class="mobile">
       <div class="top-navbar flex">
         <img src="menu-icon.svg" alt="menu-icon" onclick="openMenu()">
@@ -36,10 +25,13 @@
         <img src="avatar.svg" alt="avatar logo">
       </div>
       <div id="sidebar"
-        class="sidebar w-[0] fixed z-10 top-0 left-0 transition-all duration-[0.4s] overflow-hidden h-[100vh] bg-green-500 ">
+        class="sidebar shadow-2xl w-[0] fixed z-10 top-0 left-0 transition-all duration-[0.4s] overflow-hidden h-[100vh] bg-white ">
         <div>
-          <div class="close-btn"><img src="close.svg" alt="close icon" width="24px" onclick="closeMenu()"></div>
-          <h4>Menu</h4>
+          <div class="p-5">
+            <div class="close-btn"><img src="close.svg" alt="close icon" width="14px" onclick="closeMenu()"></div>
+            <button class="mt-7 py-3 text-sm bg-black/[0.9] rounded-lg text-white w-[100%] shadow-md"> Free download
+            </button>
+          </div>
           <div class="mobile accordion-container w-[100%]">
             <div class="" id="accordion"></div>
           </div>
@@ -49,14 +41,14 @@
     </nav>
 
     <nav class="pc hidden">
-      <div class="flex gap-5 w-[max] b2">
+      <div class="flex items-center gap-5 w-[max]">
         <p> CPS </p>
         <p> Services </p>
 
-        <div class="flyout b2">
+        <div class="flyout">
           <p class="flyout-header"> Product </p>
           <ul
-            class="flyout-content absolute hidden p-5 bg-amber-500 w-screen h-[150px] shadow-xl left-[-1%] top-[70%] z-10">
+            class="flyout-content absolute hidden p-5 bg-white w-screen h-[150px] shadow-xl left-[-1%] top-[70%] z-10">
             <li class="hover:bg-slate-300">Download</li>
             <li class="hover:bg-slate-300">Learn</li>
             <li class="hover:bg-slate-300">Academy</li>
@@ -65,10 +57,10 @@
 
         <p> Academy </p>
 
-        <div class="flyout b2 relative">
+        <div class="flyout relative">
           <p class="flyout-header"> Purchase </p>
           <ul
-            class="flyout-content absolute hidden p-5 bg-yellow-500 w-[150px] h-[150px] shadow-xl rounded-[8px] left-[-10%]">
+            class="flyout-content p-5 absolute hidden bg-yellow-500 w-[150px] h-[150px] shadow-xl rounded-[8px] left-[-10%]">
             <li>Download</li>
             <li>Learn</li>
             <li>Academy</li>
@@ -76,29 +68,35 @@
         </div>
 
         <p class="flex mr-auto"> Services</p>
-        <button class="sign-in"> Download </button>
+        <button class="sign-in bg-black text-sm text-white px-4 py-2 rounded-lg"> Download </button>
       </div>
     </nav>
   </header>
 
-  <main class="">
-    <section class="hero h-[200px] b2">hero</section>
-    <section class="app-suite h-[100px] b2">app-suite</section>
-    <section class="gallery-wall h-[100px] b2">gallery-wall</section>
-    <section class="collaboration h-[100px] b2">collaboration</section>
-    <section class="achievements h-[100px] b2">achievements</section>
-    <section class="downloads h-[300px] b2">downloads</section>
+  <main class="-mt-50px [marginTop:-150px]">
+    <section class="hero h-[500px]"></section>
+    <section class="app-suite h-[200px] bg-white">app-suite</section>
+    <section class="gallery-wall h-[300px]">gallery-wall</section>
+    <section class="collaboration h-[100px] bg-white">collaboration</section>
+    <section class="achievements h-[200px]">achievements</section>
+    <section class="downloads h-[300px] bg-white">downloads</section>
     <aside class=""></aside>
   </main>
 
-  <footer class="h-[200px] bg-indigo-700" id="footer">
-    <div class="footer-container"> Footer </div>
+  <footer class="bg-[#E7E7E7]" id="footer">
+    <div class="p-5">
+      <p>Footer</p>
+    </div>
+    <div class="footer-container mobile" id="footer-accordion"></div>
+    <div class="p-5">
+      <div class="" id="select-button"></div>
+    </div>
   </footer>
 
 
 
   <!-- react root container -->
-  <div id="root" class="border border-yellow-500 fixed p-2 right-8 top-[25%] bg-gray-600"></div>
+  <div id="root" class=""></div>
   <!-- scripts -->
   <script type="module" src="/src/main.jsx"></script>
   <script src="./src/scripts/index.js"></script>

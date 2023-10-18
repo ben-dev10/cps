@@ -8,7 +8,7 @@ import { ChevronDownIcon } from "@radix-ui/react-icons";
 import AccordionChild from "./accordion-child";
 
 const AccordionParent = () => (
-  <AccordionRoot type="single" defaultValue="item-1" collapsible>
+  <AccordionRoot type="single" collapsible>
     <AccordionItem value="item-1">
       <AccordionTrigger>
         <b>Product</b>
@@ -67,7 +67,7 @@ const AccordionItem = styled(Accordion.Item, {
   "&:focus-within": {
     position: "relative",
     zIndex: 1,
-    boxShadow: `0 0 0 2px ${mauve.mauve12}`,
+    // boxShadow: `0 0 0 2px ${mauve.mauve12}`,
   },
 });
 
