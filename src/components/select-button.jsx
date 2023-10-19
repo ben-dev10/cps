@@ -26,9 +26,14 @@ export const SelectButton = () => (
         <SelectViewport>
           <Select.Group>
             <SelectLabel>Language</SelectLabel>
-            <SelectItem value="apple">English</SelectItem>
-            <SelectItem value="banana">Spanish</SelectItem>
-            <SelectItem value="blueberry">French</SelectItem>
+            <SelectItem value="en">English</SelectItem>
+            <SelectItem value="sp">Spanish</SelectItem>
+            <SelectItem value="fr">French</SelectItem>
+            <SelectItem value="ar">Arabic</SelectItem>
+            <SelectItem value="ru">Russian</SelectItem>
+            <SelectItem value="ha">Hausa</SelectItem>
+            <SelectItem value="ch">Chinese</SelectItem>
+            <SelectItem value="jp">Japanese</SelectItem>
           </Select.Group>
         </SelectViewport>
         <SelectScrollDownButton>

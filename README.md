@@ -7,3 +7,8 @@ Creative Productive Software (CPS) is a powerful suite of document editors inclu
 Issue#1:
 
 - import problems with `type="module"` and common.js external scripts syntaxes.
+
+## Principles
+
+1. Mobile First
+2. 'Function' before 'form'
