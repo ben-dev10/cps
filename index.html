@@ -78,8 +78,32 @@
     </nav>
   </header>
 
-  <main class="-mt-50px [marginTop:-150px]">
-    <section class="hero h-[500px]"></section>
+  <main class="-mt-[150px]">
+    <section class="hero flex justify-center pb-0">
+      <div class="wrapper pt-[170px] flex flex-col items-center max-w-[1000px]">
+        <div class="texts text-center">
+          <h2 class="text-xl mb-3 font-bold">
+            Free You From Busy Work 
+            <span class="text-[10px] text-white bg-[#0A6CFF] p-1 px-4 rounded-full translate-y-[-10px] scale-[.95] hidden md:inline-block">New v2023</span></h2>
+          <p class="text-[12px] mb-5 md:max-w-[650px]">
+            WPS Office is a lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and
+            professional office software, WPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and
+            PDF to
+            improve your work efficiency.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="flex items-center gap-x-1 button-clicked text-[12px] font-bold bg-black text-white rounded-lg shadow-lg px-4 py-3">
+              <img src="public/download-icon.svg" alt="" width="25px">
+              <span>Free download</span>
+            </button>
+          </div>
+        </div>
+        <div class="p-5 pb-0 max-w-[380px] md:max-w-[680px]">
+          <img src="./public/cps-assets/hero.png" alt="" class="translate-y-[10px]">
+        </div>
+      </div>
+    </section>
 
     <section class="app-suite p-3 py-5 bg-white">
       <div class="texts text-center mb-5">
@@ -101,20 +125,22 @@
 
     <section class="gallery-wall h-[300px]">gallery-wall</section>
 
-    <!-- FIXME: responsive flex containers (responsive syntax in general) -->
-    <section class="collaboration flex flex-col md:flex p-5 bg-white">
-      <div class="texts text-center md:text-left">
-        <h2 class="text-xl mb-3 font-bold">Team Collaboration in Real Time</h2>
-        <p class="text-[12px] mb-5">
-          True synchronization and seamless collaboration on all platforms. You can track
-          changes as others type when you work collaboratively, and set edit permissions
-          to protect data security.
-        </p>
-        <button class="text-[12px] font-bold bg-black text-white rounded-lg shadow-lg px-4 py-3">Start your
-          Collaboration</button>
-      </div>
-      <div class="p-5 overflow-x-hidden max-w-[350px] md:max-w-[470px]">
-        <img src="./public/cps-assets/collaboration.png" alt="" class="">
+    <section class="collaboration flex justify-center p-5 bg-white">
+      <div class="wrapper flex flex-col items-center md:flex-row max-w-[1000px]">
+        <div class="texts text-center md:text-left">
+          <h2 class="text-xl mb-3 font-bold">Team Collaboration in Real Time</h2>
+          <p class="text-[12px] mb-5">
+            True synchronization and seamless collaboration on all platforms. You can track
+            changes as others type when you work collaboratively, and set edit permissions
+            to protect data security.
+          </p>
+          <button class="button-clicked text-[12px] font-bold bg-black text-white rounded-lg shadow-lg px-4 py-3">Start
+            your
+            Collaboration</button>
+        </div>
+        <div class="p-5 max-w-[350px] md:max-w-[470px]">
+          <img src="./public/cps-assets/collaboration.png" alt="" class="">
+        </div>
       </div>
     </section>
 

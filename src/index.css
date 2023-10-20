@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 
-
 :root {
   font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +13,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.button-clicked {
+  @apply transition-transform active:scale-[0.9]
+}
+
+
+/* --- general styles --- */
 .hero {
   background-image: url('./assets/hero-bg-mobile.png');
   background-size: cover;
@@ -31,7 +35,7 @@
 }
 
 /* pc breakpoint: applies at 700px -> infinity */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
   /* for mobile visibility */
   .mobile {
