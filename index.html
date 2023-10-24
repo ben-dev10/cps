@@ -20,9 +20,9 @@
 
   <header class=" p-3 sticky top-0 z-[999]" id="header">
     <nav class="mobile">
-      <div class="top-navbar flex" id="open-btn">
+      <div class="top-navbar flex">
         <!-- <img src="menu-icon.svg" alt="menu-icon" onclick="openMenu()"> -->
-        <img src="menu-icon.svg" alt="menu-icon">
+        <img src="menu-icon.svg" alt="menu-icon" id="open-btn">
         <span class="m-auto"> CPS </span>
         <img src="avatar.svg" alt="avatar logo">
       </div>
@@ -83,11 +83,14 @@
       <div class="wrapper pt-[170px] flex flex-col items-center max-w-[1000px]">
         <div class="texts text-center">
           <h2 class="text-xl mb-3 font-bold">
-            Free You From Busy Work 
-            <span class="text-[10px] text-white bg-[#0A6CFF] p-1 px-4 rounded-full translate-y-[-10px] scale-[.95] hidden md:inline-block">New v2023</span></h2>
+            Free You From Busy Work
+            <span
+              class="text-[10px] text-white bg-[#0A6CFF] p-1 px-4 rounded-full translate-y-[-10px] scale-[.95] hidden md:inline-block">New
+              v2023</span>
+          </h2>
           <p class="text-[12px] mb-5 md:max-w-[650px]">
-            WPS Office is a lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and
-            professional office software, WPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and
+            CPS Office is a lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and
+            professional office software, CPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and
             PDF to
             improve your work efficiency.
           </p>
@@ -145,7 +148,33 @@
     </section>
 
     <section class="achievements h-[200px]">achievements</section>
-    <section class="downloads h-[300px] bg-white">downloads</section>
+
+    <section class="downloads relative overflow-hidden flex justify-center bg-white py-5">
+      <div class="wrapper flex flex-col items-center md:flex-row max-w-[1000px]">
+        <div class="p-5 max-w-[350px] md:max-w-[470px]">
+          <img src="./public/cps-assets/wps-illustration.png" alt="" class="">
+        </div>
+        <div class="texts text-center md:text-left">
+          <h2 class="text-xl mb-3 font-bold">Get Started with CPS Office for Free</h2>
+          <p class="text-[12px] mb-5">
+            Improve work efficiency and inspire your creativity with 170 million CPS Office users worldwide.
+          </p>
+          <button class="button-clicked mb-2 text-[12px] font-bold bg-black text-white rounded-lg shadow-lg px-4 py-3">
+            Download now
+          </button>
+        </div>
+      </div>
+      <div class="designs pc hidden">
+        <!-- overflow hidden was used to clip out designs -->
+        <img src="./public/cps-assets/purple-circle.svg" alt="" width="150px" class="absolute top-[-25%] right-[5%]">
+        <img src="./public/cps-assets/black-circle.svg" alt="" width="150px"
+          class="absolute bottom-[-28%] right-[35%] scale-[.8]">
+        <img src="./public/cps-assets/black-circle.svg" alt="" width="150px"
+          class="absolute top-[48%] right-[6%] scale-[.5]">
+        <img src="./public/cps-assets/blob.svg" alt="" class="absolute bottom-[-47%] left-[4%]">
+      </div>
+    </section>
+
     <aside class=""></aside>
   </main>
 
