@@ -55,13 +55,13 @@ const AccordionItem = styled(Accordion.Item, {
 
   "&:first-child": {
     marginTop: 0,
-    borderTopLeftRadius: 4,
-    borderTopRightRadius: 4,
+    // borderTopLeftRadius: 4,
+    // borderTopRightRadius: 4,
   },
 
   "&:last-child": {
-    borderBottomLeftRadius: 4,
-    borderBottomRightRadius: 4,
+    // borderBottomLeftRadius: 4,
+    // borderBottomRightRadius: 4,
   },
 
   "&:focus-within": {
@@ -105,7 +105,7 @@ const StyledTrigger = styled(Accordion.Trigger, {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  fontSize: 15,
+  fontSize: 12,
   lineHeight: 1,
   color: violet.violet11,
   boxShadow: `0 1px 0 ${mauve.mauve6}`,
@@ -132,7 +132,7 @@ const slideUp = keyframes({
 
 const StyledContent = styled(Accordion.Content, {
   overflow: "hidden",
-  fontSize: 15,
+  fontSize: 11,
   color: mauve.mauve11,
   backgroundColor: mauve.mauve2,
 

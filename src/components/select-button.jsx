@@ -12,13 +12,13 @@ import {
 export const SelectButton = () => (
   <Select.Root>
     <SelectTrigger aria-label="Language">
-      <img src="earth.svg" width="18px" className="mr-2"></img>
+      <img src="earth.svg" width="15.5px" className="mr-1"></img>
       <Select.Value placeholder="Select language…" />
       <SelectIcon>
         <ChevronDownIcon />
       </SelectIcon>
     </SelectTrigger>
-    <Select.Portal className="[marginLeft:-10px]">
+    <Select.Portal className="[marginLeft:-6px]">
       <SelectContent>
         <SelectScrollUpButton>
           <ChevronUpIcon />
@@ -50,9 +50,9 @@ const SelectTrigger = styled(Select.SelectTrigger, {
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
-  borderRadius: 4,
-  padding: "0 15px",
-  fontSize: 13,
+  borderRadius: 8,
+  padding: "0 10px",
+  fontSize: 12,
   lineHeight: 1,
   height: 45,
   gap: 5,
@@ -93,7 +93,7 @@ const SelectItem = React.forwardRef(({ children, ...props }, forwardedRef) => {
 });
 
 const StyledItem = styled(Select.Item, {
-  fontSize: 13,
+  fontSize: 11,
   lineHeight: 1,
   color: violet.violet11,
   borderRadius: 3,
@@ -118,7 +118,7 @@ const StyledItem = styled(Select.Item, {
 
 const SelectLabel = styled(Select.Label, {
   padding: "0 25px",
-  fontSize: 12,
+  fontSize: 11,
   lineHeight: "25px",
   color: mauve.mauve11,
 });

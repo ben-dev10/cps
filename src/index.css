@@ -13,12 +13,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.button-clicked {
-  @apply transition-transform active:scale-[0.9]
+/* ---tailwind directives --- */
+@layer components {
+  .button-clicked {
+    @apply transition-transform active:scale-[0.9]
+  }
+
+  .body-text-header {
+    @apply font-bold text-[11px]
+  }
+
+  .body-text {
+    @apply text-[11px]
+  }
 }
 
 
 /* --- general styles --- */
+/* flyout menu */
+.flyout:hover .flyout-content {
+  display: block;
+}
+
 .hero {
   background-image: url('./assets/hero-bg-mobile.png');
   background-size: cover;
@@ -69,4 +85,14 @@
 /* main -> section */
 main>section {
   padding: 10px;
+}
+
+/* footer -> pc-links */
+.links-pc li {
+  padding: 3px 7px;
+}
+
+.links-pc li:hover {
+  background-color: #d0d0d0;
+  border-radius: 3px;
 }

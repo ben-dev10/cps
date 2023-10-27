@@ -34,7 +34,8 @@
               <!-- <img src="close.svg" alt="close icon" width="14px" onclick="closeMenu()"> -->
               <img src="close.svg" alt="close icon" width="14px">
             </div>
-            <button class="mt-7 py-3 text-sm bg-black/[0.9] rounded-lg text-white w-[100%] shadow-md"> Free download
+            <button class="mt-7 py-3 text-sm bg-black/[0.9] rounded-lg text-white w-[100%] shadow-md">
+              <p class="text-[12px]">Free download</p>
             </button>
           </div>
           <div class="mobile accordion-container w-[100%]">
@@ -46,34 +47,36 @@
     </nav>
 
     <nav class="pc hidden">
-      <div class="flex items-center gap-5 w-[max]">
+      <div class="flex items-center gap-5 w-[max] body-text">
         <p> CPS </p>
         <p> Services </p>
-
         <div class="flyout">
-          <p class="flyout-header"> Product </p>
+          <p class="flyout-header inline-flex items-center">
+            <span>Product</span> <span><img class="ml-1 w-[12px]" src="./public/arrow.svg" alt=""></span>
+          </p>
           <ul
-            class="flyout-content absolute hidden p-5 bg-white w-screen h-[150px] shadow-xl left-[-1%] top-[70%] z-10">
-            <li class="hover:bg-slate-300">Download</li>
-            <li class="hover:bg-slate-300">Learn</li>
-            <li class="hover:bg-slate-300">Academy</li>
+            class="flyout-content absolute space-y-3 hidden p-5 bg-white w-screen h-[150px] shadow-xl left-[-1%] top-[70%] z-10">
+            <li class="hover:bg-slate-300 p-2 radius-md">Download</li>
+            <li class="hover:bg-slate-300 p-2 radius-md">Learn</li>
+            <li class="hover:bg-slate-300 p-2 radius-md">Academy</li>
           </ul>
         </div>
-
         <p> Academy </p>
-
         <div class="flyout relative">
-          <p class="flyout-header"> Purchase </p>
+          <p class="flyout-header inline-flex items-center">
+            <span>Purchase</span> <span><img class="ml-1 w-[11px]" src="./public/arrow.svg" alt=""></span>
+          </p>
           <ul
-            class="flyout-content p-5 absolute hidden bg-yellow-500 w-[150px] h-[150px] shadow-xl rounded-[8px] left-[-10%]">
+            class="flyout-content p-5 space-y-3 absolute hidden bg-white w-[150px] h-[150px] shadow-xl rounded-[8px] left-[-10%]">
             <li>Download</li>
             <li>Learn</li>
             <li>Academy</li>
           </ul>
         </div>
-
         <p class="flex mr-auto"> Services</p>
-        <button class="sign-in bg-black text-sm text-white px-4 py-2 rounded-lg"> Download </button>
+        <button class="sign-in bg-black text-sm text-white px-3 py-[5.5px] rounded-lg">
+          <p class="body-text">Download</p>
+        </button>
       </div>
     </nav>
   </header>
@@ -85,8 +88,9 @@
           <h2 class="text-xl mb-3 font-bold">
             Free You From Busy Work
             <span
-              class="text-[10px] text-white bg-[#0A6CFF] p-1 px-4 rounded-full translate-y-[-10px] scale-[.95] hidden md:inline-block">New
-              v2023</span>
+              class="text-[10px] leading-[22px] text-white bg-[#0A6CFF] py-[0px] px-[7.5px] rounded-full translate-y-[-4px] hidden md:inline-block">New
+              v2023
+            </span>
           </h2>
           <p class="text-[12px] mb-5 md:max-w-[650px]">
             CPS Office is a lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and
@@ -179,12 +183,58 @@
   </main>
 
   <footer class="bg-[#E7E7E7]" id="footer">
-    <div class="p-5">
-      <p>Footer</p>
+    <div class="md:flex">
+      <div class="company-info p-5 md:mr-5 md:pt-8">
+        <img src="./public/cps-assets/wps-logo.svg" alt="cps-logo" class="mb-3" width="82px">
+        <p class="body-text-header">Make Busy Work Easy</p>
+        <p class="body-text">WPS SOFTWARE PTE. LTD., 6 RAFFLES QUAY #14-06 SINGAPORE (048580)</p>
+      </div>
+
+      <div class="links-pc pc hidden border w-full">
+        <div class="flex gap-x-9 mt-8">
+          <div class="product-links">
+            <p class="body-text-header">Product</p>
+            <div>
+              <ul class="body-text space-y-3 mt-2">
+                <li><a href="#">CPS Office for Windows</a></li>
+                <li><a href="#">CPS Office for MacOS</a></li>
+                <li><a href="#">CPS Office for Linux</a></li>
+                <li><a href="#">CPS Office for Android</a></li>
+                <li><a href="#">CPS Office for iPhone</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="company-links">
+            <p class="body-text-header">Company</p>
+            <div>
+              <ul class="body-text space-y-3 mt-2">
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Business Cooperation</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Sales</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-links">
+            <p class="body-text-header">Support</p>
+            <div>
+              <ul class="body-text space-y-3 mt-2">
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">CPS Academy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="footer-container mobile" id="footer-accordion"></div>
-    <div class="p-5">
+
+    <div class="language p-5 space-y-4">
       <div class="" id="select-button"></div>
+      <p class="body-text">Copyright © QueenSoft Office Software, All Rights Reserved</p>
     </div>
   </footer>
 
