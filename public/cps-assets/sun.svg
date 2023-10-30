@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="260px" height="260px" viewBox="0 0 260 260" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0%" stop-color="#FFE49C" stop-opacity="0.98039216" />
+      <stop offset="100%" stop-color="#FFC166" />
+    </linearGradient>
+    <path
+      d="M0 130C0 58.203 58.203 0 130 0C201.797 0 260 58.203 260 130C260 201.797 201.797 260 130 260C58.203 260 0 201.797 0 130Z"
+      id="path_1" />
+    <path
+      d="M22.5 130C22.5 70.6294 70.6294 22.5 130 22.5C189.371 22.5 237.5 70.6294 237.5 130C237.5 189.371 189.371 237.5 130 237.5C70.6294 237.5 22.5 189.371 22.5 130Z"
+      id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="sun">
+    <g id="Oval-Copy-2">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#8B8B8B" stroke-width="2" />
+      </g>
+    </g>
+    <g id="Oval-Copy">
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_2" fill="none" stroke="#8B8B8B" stroke-width="2" />
+      </g>
+    </g>
+    <path
+      d="M63 130C63 92.9969 92.9969 63 130 63C167.003 63 197 92.9969 197 130C197 167.003 167.003 197 130 197C92.9969 197 63 167.003 63 130Z"
+      id="Oval" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
