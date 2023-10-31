@@ -152,12 +152,15 @@ const fadeOut = keyframes({
   to: { opacity: 0 },
 });
 
+
+/* MARK-UP */
 const NavigationMenuRoot = styled(NavigationMenu.Root, {
   position: "relative",
   display: "flex",
   justifyContent: "center",
   width: "100vw",
   zIndex: 1,
+  border:"2px solid red"
 });
 
 const NavigationMenuList = styled(NavigationMenu.List, {
