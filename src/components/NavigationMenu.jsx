@@ -2,7 +2,7 @@ import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { styled, keyframes } from "@stitches/react";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-import { violet, mauve, indigo, purple, blackA } from "@radix-ui/colors";
+import { violet, mauve, indigo, purple } from "@radix-ui/colors";
 
 // suffix ST means "stitches"
 const NavigationMenuST = () => {
@@ -54,7 +54,7 @@ const NavigationMenuST = () => {
           <NavigationMenuTrigger>
             Overview <CaretDown aria-hidden />
           </NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent className="w-[calc(100vw+40px)] pl-[20px] ml-[-40px]">
             <List layout="two">
               <ListItem
                 title="Introduction"
@@ -152,25 +152,24 @@ const fadeOut = keyframes({
   to: { opacity: 0 },
 });
 
-
 /* MARK-UP */
 const NavigationMenuRoot = styled(NavigationMenu.Root, {
   position: "relative",
   display: "flex",
   justifyContent: "center",
-  width: "100vw",
-  zIndex: 1,
-  border:"2px solid red"
+  //   width: "100vw",
+  width: "max-content",
+  //   zIndex: 10,
 });
 
 const NavigationMenuList = styled(NavigationMenu.List, {
   display: "flex",
   justifyContent: "center",
-  backgroundColor: "white",
+  //   backgroundColor: "white",
+  //   boxShadow: `0 2px 10px ${blackA.blackA4}`,
   padding: 4,
   borderRadius: 6,
   listStyle: "none",
-  boxShadow: `0 2px 10px ${blackA.blackA4}`,
   margin: 0,
 });
 
@@ -208,7 +207,11 @@ const NavigationMenuContent = styled(NavigationMenu.Content, {
   position: "absolute",
   top: 0,
   left: 0,
+  zIndex: 1,
   width: "100%",
+  backgroundColor: "white",
+  borderRadius: 8,
+  boxShadow: `hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 15px 20px -15px`,
   "@media only screen and (min-width: 600px)": { width: "auto" },
   animationDuration: "250ms",
   animationTimingFunction: "ease",
@@ -238,9 +241,10 @@ const NavigationMenuViewport = styled(NavigationMenu.Viewport, {
   width: "100%",
   backgroundColor: "white",
   borderRadius: 6,
-  overflow: "hidden",
-  boxShadow:
-    "hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px",
+  //   overflow: "hidden",
+  //   boxShadow:
+  //     "hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px",
+
   height: "var(--radix-navigation-menu-viewport-height)",
   transition: "width, height, 300ms ease",
   '&[data-state="open"]': { animation: `${scaleIn} 200ms ease` },
