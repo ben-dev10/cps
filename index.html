@@ -22,9 +22,9 @@
     <nav class="mobile">
       <div class="top-navbar flex">
         <!-- <img src="menu-icon.svg" alt="menu-icon" onclick="openMenu()"> -->
-        <img src="menu-icon.svg" alt="menu-icon" id="open-btn">
+        <img src="./public/menu-icon.svg" alt="menu-icon" id="open-btn">
         <span class="m-auto"> CPS </span>
-        <img src="avatar.svg" alt="avatar logo">
+        <img src="./public/avatar.svg" alt="avatar logo">
       </div>
       <div id="sidebar"
         class="sidebar shadow-2xl w-[0] fixed z-10 top-0 left-0 transition-all duration-[0.4s] overflow-hidden h-[100vh] bg-white ">
@@ -32,7 +32,7 @@
           <div class="p-5">
             <div class="close-btn" id="close-btn">
               <!-- <img src="close.svg" alt="close icon" width="14px" onclick="closeMenu()"> -->
-              <img src="close.svg" alt="close icon" width="14px">
+              <img src="./public/close.svg" alt="close icon" width="14px">
             </div>
             <button class="mt-7 py-3 text-sm bg-black/[0.9] rounded-lg text-white w-[100%] shadow-md">
               <p class="text-[12px]">Free download</p>
@@ -47,7 +47,22 @@
     </nav>
 
     <nav class="pc hidden">
-      <div class="" id="nav-menu"></div>
+      <div class="flex text-[11px]">
+        <div class="max-w-max" id="nav-menu"></div>
+        <div class="flex w-full items-center">
+          <ul class="flex">
+            <a href="" class="nav-link">
+              Product
+            </a>
+            <a href="" class="nav-link">
+              Company
+            </a>
+          </ul>
+          <button
+            class="ml-auto text-[11px] bg-black/[0.9] rounded-md px-[12px] py-[8.5px] text-white shadow-md button-clicked">Download
+            now</button>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -71,7 +86,7 @@
           <div class="flex justify-center">
             <button
               class="flex items-center gap-x-1 button-clicked text-[12px] font-bold bg-black text-white rounded-lg shadow-lg px-[14px] py-[9px] md:px-4 md:py-3">
-              <img src="public/download-icon.svg" alt="" width="20px">
+              <img src="./public/download-icon.svg" alt="" width="20px">
               <span>Free download</span>
             </button>
           </div>
@@ -175,7 +190,7 @@
     <aside class=""></aside>
   </main>
 
-  <footer class="bg-[#E7E7E7]" id="footer">
+  <footer class="bg-[#eeeff1]" id="footer">
     <div class="md:flex">
       <div class="company-info p-5 md:mr-5 md:pt-8">
         <img src="./public/cps-assets/wps-logo.svg" alt="cps-logo" class="mb-3" width="82px">
@@ -183,7 +198,7 @@
         <p class="body-text">WPS SOFTWARE PTE. LTD., 6 RAFFLES QUAY #14-06 SINGAPORE (048580)</p>
       </div>
 
-      <div class="links-pc pc hidden border w-full">
+      <div class="links-pc pc hidden w-full">
         <div class="flex gap-x-9 mt-8">
           <div class="product-links">
             <p class="body-text-header">Product</p>

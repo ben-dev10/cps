@@ -8,11 +8,12 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
+import earthSvg from "/earth.svg";
 
 export const SelectButton = () => (
   <Select.Root>
     <SelectTrigger aria-label="Language">
-      <img src="earth.svg" width="15.5px" className="mr-1"></img>
+      <img src={earthSvg} width="16px" className="mr-1"></img>
       <Select.Value placeholder="Select language…" />
       <SelectIcon>
         <ChevronDownIcon />
@@ -50,7 +51,7 @@ const SelectTrigger = styled(Select.SelectTrigger, {
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
-  borderRadius: 8,
+  borderRadius: 6,
   padding: "0 10px",
   fontSize: 12,
   lineHeight: 1,

@@ -165,6 +165,7 @@ const NavigationMenuRoot = styled(NavigationMenu.Root, {
 const NavigationMenuList = styled(NavigationMenu.List, {
   display: "flex",
   justifyContent: "center",
+  alignItems:"center",
   //   backgroundColor: "white",
   //   boxShadow: `0 2px 10px ${blackA.blackA4}`,
   padding: 4,
@@ -180,7 +181,7 @@ const itemStyles = {
   fontWeight: 500,
   lineHeight: 1,
   borderRadius: 4,
-  fontSize: 15,
+  fontSize: 11,
   color: violet.violet11,
   "&:focus": { boxShadow: `0 0 0 2px ${violet.violet7}` },
   "&:hover": { backgroundColor: violet.violet3 },
@@ -199,7 +200,7 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
   ...itemStyles,
   display: "block",
   textDecoration: "none",
-  fontSize: 15,
+  fontSize: 11,
   lineHeight: 1,
 });
 
@@ -304,7 +305,7 @@ const ListItemLink = styled("a", {
   userSelect: "none",
   padding: 12,
   borderRadius: 6,
-  fontSize: 15,
+  fontSize: 11,
   lineHeight: 1,
   "&:focus": { boxShadow: `0 0 0 2px ${violet.violet7}` },
   "&:hover": { backgroundColor: mauve.mauve3 },
