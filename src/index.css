@@ -30,6 +30,10 @@
   .nav-link {
     @apply text-[#6550b9] [lineHeight:1] px-3 py-2 rounded-[4px] hover:bg-violet-50
   }
+
+  .column {
+    @apply flex flex-col gap-y-4 rotate-[16deg] shrink-0
+  }
 }
 
 /* --- general styles --- */
