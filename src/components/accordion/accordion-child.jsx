@@ -10,20 +10,19 @@ const AccordionChild = () => (
   <AccordionRoot type="single" collapsible>
     <AccordionItem value="item-1">
       <AccordionTrigger>
-        <b>Product</b>
+        <b>Help</b>
       </AccordionTrigger>
       <AccordionContent>
-        Yes. It adheres to the WAI-ARIA design pattern.
+        Feedback
       </AccordionContent>
     </AccordionItem>
 
     <AccordionItem value="item-2">
       <AccordionTrigger>
-        <b>Company</b>
+        <b>CPS Academy</b>
       </AccordionTrigger>
       <AccordionContent>
-        Yes. It&apos;s unstyled by default, giving you freedom over the look and
-        feel.
+        Help Center
       </AccordionContent>
     </AccordionItem>
   </AccordionRoot>

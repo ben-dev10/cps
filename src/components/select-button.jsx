@@ -13,7 +13,12 @@ import earthSvg from "/earth.svg";
 export const SelectButton = () => (
   <Select.Root>
     <SelectTrigger aria-label="Language">
-      <img src={earthSvg} width="16px" className="mr-1"></img>
+      <img
+        src={earthSvg}
+        width="16px"
+        className="mr-1"
+        alt="an icon of the globe"
+      ></img>
       <Select.Value placeholder="Select language…" />
       <SelectIcon>
         <ChevronDownIcon />

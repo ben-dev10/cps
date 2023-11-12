@@ -1,12 +1,29 @@
 # CPS
 
-Creative Productive Software (CPS) is a powerful suite of document editors including popular formats such as .docx, .pdf, .pptx .etc and a host of other functions &amp; formats.
+![cps hero](./public/readme-hero.png)
 
-## Issues
+**Disclaimer**: This is a simplified clone of the [WPS website](https://www.wps.com), a pet project of the author. All rights reserved.
 
-Issue#1:
+Now pretend the following is a real sales pitch by a marketing representative of an imaginary software startup.
 
-- import problems with `type="module"` and common.js external scripts syntaxes.
+"Creative Productive Software (CPS) is a powerful suite of document editors including popular formats such as .docx, .pdf, .pptx .etc and a host of other functions &amp; formats."
+
+## Setup
+
+This is a project bootstrapped with Vite+React.
+
+Use the following command to install all dependencies:
+
+```bash
+npm i
+```
+
+I prepared [some notes](./docs/general.md) along the way.
+
+Libraries used:
+
+- Radix Primitives
+- TailwindCSS
 
 ## Principles
 

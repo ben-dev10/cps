@@ -6,6 +6,7 @@ import { styled, keyframes } from "@stitches/react";
 import { violet, mauve } from "@radix-ui/colors";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import AccordionChild from "./accordion-child";
+import cpsIcon from "../../assets/icon.svg";
 
 const AccordionParent = () => (
   <AccordionRoot type="single" collapsible>
@@ -14,7 +15,7 @@ const AccordionParent = () => (
         <b>Product</b>
       </AccordionTrigger>
       <AccordionContent>
-        Yes. It adheres to the WAI-ARIA design pattern.
+        <a href="#">Overview</a>
       </AccordionContent>
     </AccordionItem>
 
@@ -22,10 +23,8 @@ const AccordionParent = () => (
       <AccordionTrigger>
         <b>Company</b>
       </AccordionTrigger>
-      <AccordionContent>
-        Yes. It&apos;s unstyled by default, giving you freedom over the look and
-        feel.
-      </AccordionContent>
+      <AccordionContent>About us</AccordionContent>
+      <AccordionContent>Business Cooperation</AccordionContent>
     </AccordionItem>
 
     <AccordionItem value="item-3">
@@ -33,7 +32,10 @@ const AccordionParent = () => (
         <b>Support</b>
       </AccordionTrigger>
       <AccordionContent>
-        <b>Call Support</b>
+        <div className="flex gap-x-2">
+          <img src={cpsIcon} width="18px" />
+          <b>Call Support</b>
+        </div>
         <div className="accordion-container w-[100%]">
           <AccordionChild />
         </div>

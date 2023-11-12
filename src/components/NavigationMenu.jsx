@@ -95,7 +95,7 @@ const NavigationMenuST = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenuLink href="https://github.com/radix-ui">
+          <NavigationMenuLink href="https://github.com/ben-dev10">
             Github
           </NavigationMenuLink>
         </NavigationMenu.Item>
@@ -165,7 +165,7 @@ const NavigationMenuRoot = styled(NavigationMenu.Root, {
 const NavigationMenuList = styled(NavigationMenu.List, {
   display: "flex",
   justifyContent: "center",
-  alignItems:"center",
+  alignItems: "center",
   //   backgroundColor: "white",
   //   boxShadow: `0 2px 10px ${blackA.blackA4}`,
   padding: 4,
