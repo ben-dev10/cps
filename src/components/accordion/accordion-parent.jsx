@@ -6,7 +6,10 @@ import { styled, keyframes } from "@stitches/react";
 import { violet, mauve } from "@radix-ui/colors";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import AccordionChild from "./accordion-child";
+
 import cpsIcon from "../../assets/icon.svg";
+import cpsIcon1 from "../../assets/icon-01.svg";
+import cpsIcon2 from "../../assets/icon-02.svg";
 
 const AccordionParent = () => (
   <AccordionRoot type="single" collapsible>
@@ -15,7 +18,10 @@ const AccordionParent = () => (
         <b>Product</b>
       </AccordionTrigger>
       <AccordionContent>
-        <a href="#">Overview</a>
+        <a href="#" className="flex gap-x-2 items-center">
+          <img src={cpsIcon} width="18px" />
+          Overview
+        </a>
       </AccordionContent>
     </AccordionItem>
 
@@ -23,8 +29,18 @@ const AccordionParent = () => (
       <AccordionTrigger>
         <b>Company</b>
       </AccordionTrigger>
-      <AccordionContent>About us</AccordionContent>
-      <AccordionContent>Business Cooperation</AccordionContent>
+      <AccordionContent>
+        <div className="flex items-center">
+          <img src={cpsIcon1} width="18px" className="mr-2" />
+          About us
+        </div>
+      </AccordionContent>
+      <AccordionContent>
+        <div className="flex items-center">
+          <img src={cpsIcon2} width="18px" className="mr-2" />
+          Business Cooperation
+        </div>
+      </AccordionContent>
     </AccordionItem>
 
     <AccordionItem value="item-3">
@@ -32,7 +48,7 @@ const AccordionParent = () => (
         <b>Support</b>
       </AccordionTrigger>
       <AccordionContent>
-        <div className="flex gap-x-2">
+        <div className="flex gap-x-2 items-center">
           <img src={cpsIcon} width="18px" />
           <b>Call Support</b>
         </div>

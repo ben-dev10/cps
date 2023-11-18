@@ -18,6 +18,12 @@ Use the following command to install all dependencies:
 npm i
 ```
 
+To start the dev server:
+
+```bash
+npm run dev
+```
+
 I prepared [some notes](./docs/general.md) along the way.
 
 Libraries used:

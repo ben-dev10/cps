@@ -11,7 +11,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* font-family: "Poppins"; */
 }
+
+/* 
+@font-face {
+  font-family: Poppins ;
+  src: url(./assets/fonts/Poppins-Regular.ttf), url(./assets/fonts/Poppins-Bold.ttf);
+} */
+
 
 /* ---tailwind directives --- */
 @layer components {

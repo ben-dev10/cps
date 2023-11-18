@@ -9,14 +9,16 @@ Build tools are ideal for non-framework projects by introducing some helpful fun
 - Fast development **servers**: HMR (Hot Module Replacement)
 - `bundlers` & `minifiers`
 - **optimize source codes & additional features**:
-  - CSS Modules
-  - code splitting,
-  - debugging support,
-  - static site generators
-  - tree-shaking: removing unused code, eg: removing any unused modules in JS
+    - CSS Modules
+    - code splitting,
+    - debugging support,
+    - static site generators
+    - tree-shaking: removing unused code, eg: removing any unused modules in JS
 - **project scaffolding**: `vanilla`, `react`, `preact`, `lit`, `svelte`, `solid`, `qwik`
 - plugins
-  
+- **dev and debug tools**: most build tools have support for debugging usually through plugins or come pre-bundled with
+  very helpful tools for debugging and troubleshooting.
+
 ## SEO - Search Engine Optimization
 
 **SEO** is a set of practices that improves the visibility and ranking of a website in **Search Engine Results Pages** (SERPs).
@@ -32,29 +34,49 @@ These practices include:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="product name" />
-    <meta name="keywords" content="keywords, more keywords" />
-    <title>Title of website</title>
-  </head>
+   
+  <head>
+       
+    <meta charset="UTF-8" />
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+    <meta name="description" content="product name" />
+       
+    <meta name="keywords" content="keywords, more keywords" />
+       
+    <title>Title of website</title>
+     
+  </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
-  
-    <main>
-      <section>
-        <h1></h1>
-        <div></div>
-      </section>
-    </main>
+       
+    <header>
+           
+      <nav></nav>
+         
+    </header>
 
-    <footer>
-      <div></div>
-    </footer>
-  </body>
+       
+    <main>
+           
+      <section>
+               
+        <h1></h1>
+               
+        <div></div>
+             
+      </section>
+         
+    </main>
+
+       
+    <footer>
+           
+      <div></div>
+         
+    </footer>
+     
+  </body>
 </html>
 ```
 
