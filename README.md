@@ -10,7 +10,7 @@ Now pretend the following is a real sales pitch by a marketing representative of
 
 ## Setup
 
-This is a project bootstrapped with Vite+React.
+This is a project bootstrapped with Vite+React. View the live version [here](https://www.ben-dev10.github.io/cps/).
 
 Use the following command to install all dependencies:
 
